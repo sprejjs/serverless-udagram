@@ -15,6 +15,12 @@ provider:
   region: ap-southeast-2
 
 functions:
+  GetOrders:
+    handler: src/orders.handler
+    events:
+      - http:
+          method: get
+          path: /shop/orders
   hello:
     handler: src/handler.hello
     events:
