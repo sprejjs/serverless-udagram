@@ -135,6 +135,8 @@ functions:
           route: $disconnect
 
   SyncWithElasticsearch:
+    environment:
+      ES_ENDPOINT: !GetAtt ImagesSearch.DomainEndpoint
     handler: src/lambda/dynamoDb/elasticsearchSync.handler
     events:
       - stream:
