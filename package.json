@@ -9,7 +9,7 @@
   "dependencies": {
     "elasticsearch": "^15.4.1",
     "http-aws-es": "^6.0.0",
-    "serverless": "^1.55.1",
+    "jimp": "^0.6.8",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
